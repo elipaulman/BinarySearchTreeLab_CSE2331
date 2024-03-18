@@ -1,0 +1,8 @@
+# Author: Elijah Paulman
+
+# How to Run the Code:
+1) Ensure you have Python 3 installed on your machine.
+2) Navigate to the directory containing the lab2.py file in your terminal.
+3) Run the lab2.py file using the following command:
+    python3 lab2.py
+4) The output should show that all 6 tests were run successfully
