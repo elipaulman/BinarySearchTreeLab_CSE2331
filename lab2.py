@@ -1,3 +1,5 @@
+# Author: Elijah Paulman
+
 class Node:
     # Initializes a node with a root and no children
     def __init__(self, key):
