@@ -91,13 +91,13 @@ class BinarySearchTree:
             current = current.left 
         return current
 
-    def in_order_traversal(self, node):
+    def inOrderTraversal(self, node):
         # In order traversal method
         result = []
         if node:
-            result = self.in_order_traversal(node.left)
+            result = self.inOrderTraversal(node.left)
             result.append(node.key)
-            result = result + self.in_order_traversal(node.right)
+            result = result + self.inOrderTraversal(node.right)
         return result
 
 import unittest
@@ -148,11 +148,11 @@ class TestBinarySearchTree(unittest.TestCase):
         # Test large input of 500 nodes
         self.assertEqual(self.bst.search(499).key, 499)  # Change 500 to 499
 
-    def test_in_order_traversal(self):
+    def inOrderTraversal(self):
         for i in [5, 3, 7, 2, 4, 6, 8]:
             self.bst.insert(i)
         # Make sure in order traversal returns the correct order
-        self.assertEqual(self.bst.in_order_traversal(self.bst.root), [2, 3, 4, 5, 6, 7, 8])
+        self.assertEqual(self.bst.inOrderTraversal(self.bst.root), [2, 3, 4, 5, 6, 7, 8])
 
 if __name__ == '__main__':
     unittest.main()
